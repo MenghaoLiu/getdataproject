@@ -1,1 +1,1 @@
-# getdataproject
+# Discription of run_analysis.R script
