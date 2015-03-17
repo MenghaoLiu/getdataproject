@@ -63,6 +63,6 @@ meanDT <- dcast(meltDT, subject + activity ~ variable, mean)
 
 ## Write the tidy data set into a .txt or .csv file named finalData and try to reload it into R
 data <- write.table(meanDT, "finalData.txt", row.names = F, col.names = T)
-data <- write.table(meanDT, "finalData.txt", sep = ",", row.names = F, col.names = T)
+data <- write.table(meanDT, "finalData.csv", sep = ",", row.names = F, col.names = T)
 data <- read.table("finalData.txt", header = T)
 
