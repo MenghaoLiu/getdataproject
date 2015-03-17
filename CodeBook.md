@@ -1,11 +1,12 @@
 # Code book for the tidy data
 
 ## Introduction
-This is a code book for the tidy data processed from [Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), which were collected from the accelerometer and gyroscope of the Samsung Galaxy S II smartphone. The tidy data provides you the average of measurements on the mean and standard deviation for a specific activity and subject. Also, it has 180 observations and 68 variables, and you can access a formatted file named [finalData.csv](https://github.com/MenghaoLiu/getdataproject/blob/master/finalData.csv) for some details in this Github repository.
+This is a code book for the tidy data processed from [Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), which were collected from the accelerometer and gyroscope of the Samsung Galaxy S II smartphone, targeting the recognition of six
+different human activities. The tidy data provides you the average of measurements on the mean and standard deviation for a specific activity and subject. Also, it has 180 observations and 68 variables, and you can access a formatted file named [finalData.csv](https://github.com/MenghaoLiu/getdataproject/blob/master/finalData.csv) for some details in this Github repository.
 ## Description of variables
 - **subject**: An integer number in 1:30, representing the identifier of a subject who carried out the experiment.
-- **activity**: 
-- **tBodyAcc-mean()-X**
+- **activity**: One kind of the six ADL (Activities of Daily Living), labeled by *WALKING*, *WALKING_UPSTAIRS*, *WALKING_DOWNSTAIRS*, *SITTING*, *STANDING* and *LAYING*.
+- **tBodyAcc-mean()-X**: 
 - **tBodyAcc-mean()-Y**
 - **tBodyAcc-mean()-Z**
 - **tBodyAcc-std()-X**
