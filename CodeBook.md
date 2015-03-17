@@ -3,8 +3,8 @@
 ## Introduction
 This is a code book for the tidy data processed from [Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), which were collected from the accelerometer and gyroscope of the Samsung Galaxy S II smartphone. The tidy data provides you the average of measurements on the mean and standard deviation for a specific activity and subject. Also, it has 180 observations and 68 variables, and you can access a formatted file named [finalData.csv](https://github.com/MenghaoLiu/getdataproject/blob/master/finalData.csv) for some details in this Github repository.
 ## Description of variables
-- **subject**
-- **activity**
+- **subject**: An integer number in 1:30, representing the identifier of a subject who carried out the experiment.
+- **activity**: 
 - **tBodyAcc-mean()-X**
 - **tBodyAcc-mean()-Y**
 - **tBodyAcc-mean()-Z**
@@ -41,6 +41,36 @@ This is a code book for the tidy data processed from [Human Activity Recognition
 - **tGravityAccMag-std()**
 - **tBodyAccJerkMag-mean()**
 - **tBodyAccJerkMag-std()**
+- **tBodyGyroMag-mean()**
+- **tBodyGyroMag-std()**
+- **tBodyGyroJerkMag-mean()**
+- **tBodyGyroJerkMag-std()**
+- **fBodyAcc-mean()-X**
+- **fBodyAcc-mean()-Y**
+- **fBodyAcc-mean()-Z**
+- **fBodyAcc-std()-X**
+- **fBodyAcc-std()-Y**
+- **fBodyAcc-std()-Z**
+- **fBodyAccJerk-mean()-X**
+- **fBodyAccJerk-mean()-Y**
+- **fBodyAccJerk-mean()-Z**
+- **fBodyAccJerk-std()-X**
+- **fBodyAccJerk-std()-Y**
+- **fBodyAccJerk-std()-Z**
+- **fBodyGyro-mean()-X**
+- **fBodyGyro-mean()-Y**
+- **fBodyGyro-mean()-Z**
+- **fBodyGyro-std()-X**
+- **fBodyGyro-std()-Y**
+- **fBodyGyro-std()-Z**
+- **fBodyAccMag-mean()**
+- **fBodyAccMag-std()**
+- **fBodyBodyAccJerkMag-mean()**
+- **fBodyBodyAccJerkMag-std()**
+- **fBodyBodyGyroMag-mean()**
+- **fBodyBodyGyroMag-std()**
+- **fBodyBodyGyroJerkMag-mean()**
+- **fBodyBodyGyroJerkMag-std()**
 
 
 
