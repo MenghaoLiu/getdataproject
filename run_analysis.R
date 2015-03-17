@@ -18,7 +18,7 @@ y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 x_train <- read.table("./UCI HAR Dataset/train/x_train.txt")
 trainDT <- cbind(subject_train, y_train, x_train)
 
-## Name the varibles in trainDT and testDT with all the features, then merge these
+## Name the variables in trainDT and testDT with all the features, then merge these
 ## two data frames and generate mergeDT1
 
 features <- read.table("./UCI HAR Dataset/features.txt", stringsAsFactors = F)
@@ -27,7 +27,7 @@ names(testDT) <- c("subject", "num", features$fea)
 names(trainDT) <- c("subject", "num", features$fea)
 mergeDT1 <- rbind(trainDT, testDT)
 
-## Extract the varibles with mean() or std() in their name and generate mergeDT2
+## Extract the variables with mean() or std() in their name and generate mergeDT2
 
 n <- grep("(mean|std)\\(\\)", colnames(mergeDT1))
 mergeDT2 <- subset(mergeDT1, select = c(1, 2, n))
@@ -38,7 +38,7 @@ activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt", stringsAs
 names(activity_labels) <- c("num", "activity")
 mergeDT3 <- merge(mergeDT2, activity_labels, by = "num", sort = F)
 
-## Transform the attribute of activity varible into factor, order the mergeDT3 by 
+## Transform the attribute of activity variable into factor, order the mergeDT3 by 
 ## subject and activity, subset mergeDT3 to create mergeDT
 
 mergeDT3$activity <- factor(mergeDT3$activity, order = T, levels = c("WALKING", "WALKING_UPSTAIRS", 
