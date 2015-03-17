@@ -46,32 +46,32 @@ different human activities. The tidy data provides you the average of measuremen
 - **tBodyGyroMag-std()**: Time domain signal, average of the body angular velocity magnitude standard deviation value.
 - **tBodyGyroJerkMag-mean()**: Time domain signal, average of the body angular velocity jerk magnitude mean value.
 - **tBodyGyroJerkMag-std()**: Time domain signal, average of the body angular velocity jerk magnitude standard deviation value.
-- **fBodyAcc-mean()-X**: frequency domain signal
-- **fBodyAcc-mean()-Y**
-- **fBodyAcc-mean()-Z**
-- **fBodyAcc-std()-X**
-- **fBodyAcc-std()-Y**
-- **fBodyAcc-std()-Z**
-- **fBodyAccJerk-mean()-X**
-- **fBodyAccJerk-mean()-Y**
-- **fBodyAccJerk-mean()-Z**
-- **fBodyAccJerk-std()-X**
-- **fBodyAccJerk-std()-Y**
-- **fBodyAccJerk-std()-Z**
-- **fBodyGyro-mean()-X**
-- **fBodyGyro-mean()-Y**
-- **fBodyGyro-mean()-Z**
-- **fBodyGyro-std()-X**
-- **fBodyGyro-std()-Y**
-- **fBodyGyro-std()-Z**
-- **fBodyAccMag-mean()**
-- **fBodyAccMag-std()**
-- **fBodyBodyAccJerkMag-mean()**
-- **fBodyBodyAccJerkMag-std()**
-- **fBodyBodyGyroMag-mean()**
-- **fBodyBodyGyroMag-std()**
-- **fBodyBodyGyroJerkMag-mean()**
-- **fBodyBodyGyroJerkMag-std()**
+- **fBodyAcc-mean()-X**: Frequency domain signal, average of the body acceleration mean value on X axis.
+- **fBodyAcc-mean()-Y**: Frequency domain signal, average of the body acceleration mean value on Y axis.
+- **fBodyAcc-mean()-Z**: Frequency domain signal, average of the body acceleration mean value on Z axis.
+- **fBodyAcc-std()-X**: Frequency domain signal, average of the body acceleration standard deviation value on X axis.
+- **fBodyAcc-std()-Y**: Frequency domain signal, average of the body acceleration standard deviation value on Y axis.
+- **fBodyAcc-std()-Z**: Frequency domain signal, average of the body acceleration standard deviation value on Z axis.
+- **fBodyAccJerk-mean()-X**: Frequency domain signal, average of the body acceleration jerk mean value on X axis.
+- **fBodyAccJerk-mean()-Y**: Frequency domain signal, average of the body acceleration jerk mean value on Y axis.
+- **fBodyAccJerk-mean()-Z**: Frequency domain signal, average of the body acceleration jerk mean value on Z axis.
+- **fBodyAccJerk-std()-X**: Frequency domain signal, average of the body acceleration jerk standard deviation value on X axis.
+- **fBodyAccJerk-std()-Y**: Frequency domain signal, average of the body acceleration jerk standard deviation value on Y axis.
+- **fBodyAccJerk-std()-Z**: Frequency domain signal, average of the body acceleration jerk standard deviation value on Z axis.
+- **fBodyGyro-mean()-X**: Frequency domain signal, average of the body angular velocity mean value on X axis.
+- **fBodyGyro-mean()-Y**: Frequency domain signal, average of the body angular velocity mean value on Y axis.
+- **fBodyGyro-mean()-Z**: Frequency domain signal, average of the body angular velocity mean value on Z axis.
+- **fBodyGyro-std()-X**: Frequency domain signal, average of the body angular velocity standard deviation value on X axis.
+- **fBodyGyro-std()-Y**: Frequency domain signal, average of the body angular velocity standard deviation value on Y axis.
+- **fBodyGyro-std()-Z**: Frequency domain signal, average of the body angular velocity standard deviation value on Z axis.
+- **fBodyAccMag-mean()**: Frequency domain signal, average of the body acceleration magnitude mean value.
+- **fBodyAccMag-std()**: Frequency domain signal, average of the body acceleration magnitude standard deviation value.
+- **fBodyBodyAccJerkMag-mean()**: Frequency domain signal, average of the body acceleration jerk magnitude mean value.
+- **fBodyBodyAccJerkMag-std()**: Frequency domain signal, average of the body acceleration jerk magnitude standard deviation value.
+- **fBodyBodyGyroMag-mean()**: Frequency domain signal, average of the body angular velocity magnitude mean value.
+- **fBodyBodyGyroMag-std()**: Frequency domain signal, average of the body angular velocity magnitude standard deviation value.
+- **fBodyBodyGyroJerkMag-mean()**: Frequency domain signal, average of the body angular velocity jerk magnitude mean value.
+- **fBodyBodyGyroJerkMag-std()**: Frequency domain signal, average of the body angular velocity jerk magnitude standard deviation value.
 
 
 
