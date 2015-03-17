@@ -18,8 +18,8 @@ y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 x_train <- read.table("./UCI HAR Dataset/train/x_train.txt")
 trainDT <- cbind(subject_train, y_train, x_train)
 
-## Name the variables in trainDT and testDT with all the features, then merge these
-## two data frames and generate mergeDT1
+## Name the variables in trainDT and testDT with all the features, then merge these 
+## two data frame and generate mergeDT1
 
 features <- read.table("./UCI HAR Dataset/features.txt", stringsAsFactors = F)
 names(features) <- c("ID", "fea")
@@ -27,19 +27,20 @@ names(testDT) <- c("subject", "num", features$fea)
 names(trainDT) <- c("subject", "num", features$fea)
 mergeDT1 <- rbind(trainDT, testDT)
 
-## Extract the variables with mean() or std() in their name and generate mergeDT2
+## Extract the variables of mergeDT1 with mean() or std() in their names, take a 
+## subset and generate mergeDT2
 
 n <- grep("(mean|std)\\(\\)", colnames(mergeDT1))
 mergeDT2 <- subset(mergeDT1, select = c(1, 2, n))
 
-## Name the activities and merge the datasets to create mergeDT3
+## Name the activitiy_labels data frame and merge the mergeDT2 with it to create mergeDT3
 
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt", stringsAsFactors = F)
 names(activity_labels) <- c("num", "activity")
 mergeDT3 <- merge(mergeDT2, activity_labels, by = "num", sort = F)
 
 ## Transform the attribute of activity variable into factor, order the mergeDT3 by 
-## subject and activity, subset mergeDT3 to create mergeDT
+## subject and activity, take a subset of mergeDT3 to create mergeDT
 
 mergeDT3$activity <- factor(mergeDT3$activity, order = T, levels = c("WALKING", "WALKING_UPSTAIRS", 
 "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
@@ -60,7 +61,8 @@ library(reshape2)
 meltDT <- melt(mergeDT, id = c("subject", "activity"), measure.vars = colnames(mergeDT)[3:68])
 meanDT <- dcast(meltDT, subject + activity ~ variable, mean)
 
-## Write the tidy data set into a txt file named finalData and try to load it into R
+## Write the tidy data set into a .txt or .csv file named finalData and try to reload it into R
 data <- write.table(meanDT, "finalData.txt", row.names = F, col.names = T)
+data <- write.table(meanDT, "finalData.txt", sep = ",", row.names = F, col.names = T)
 data <- read.table("finalData.txt", header = T)
 
