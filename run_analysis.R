@@ -46,7 +46,7 @@ mergeDT3$activity <- factor(mergeDT3$activity, order = T, levels = c("WALKING", 
 mergeDT3 <- mergeDT3[order(mergeDT3$subject, mergeDT3$num), ]
 mergeDT <- subset(mergeDT3, select = c(subject, activity, 3:68))
 
-## Check install the required package reshape2 and load it
+## Install the required package reshape2 and load it
 
 if(!is.element("reshape2", installed.packages()[,1])) {
     print("Installing packages")
@@ -57,7 +57,7 @@ library(reshape2)
 ## Melt and cast the data to create a tidy data set with the average of each variable 
 ## for each activity and each subject
 
-meltDT <- melt(mergeDT, id = c("subject", "activity"), measure.vars = colnames[3:68])
+meltDT <- melt(mergeDT, id = c("subject", "activity"), measure.vars = colnames(mergeDT)[3:68])
 meanDT <- dcast(meltDT, subject + activity ~ variable, mean)
 
 ## Write the tidy data set into a txt file named finalData and try to load it into R
